@@ -40,7 +40,7 @@ class FactorInt:
         for de in self.denominator:
             #every new loop start while loop until input number is not divisible by new loop number
             #and add divisible string at the front.
-            if isDivisible(de):
+            while isDivisible(de):
                 self.lastnumber = self.lastnumber / de
                 self.string = str(de)+"*"+self.string(self.lastnumber)
         if self.negative: #if negative add negative value
