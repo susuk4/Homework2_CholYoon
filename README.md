@@ -12,3 +12,25 @@ Factorint.py = class coded with factoring integer.
 
 README.md = instruction.
 
+Example)
+x = Factorint(0)
+Value Error
+
+x = Factorint(2.4)
+Value Error
+
+x = Factorint(24)
+divisibleBy2 = x.isDivisible(2)
+divisibleBy2 = True
+
+divisible = x.isDivisible()
+divisible = True
+
+printFactor = x.toString()
+print printFactor
+"24: 2*2*2*3"
+
+y = Factorint(-24)
+printFactor = y.toString()
+print printFactor
+"-24: -1*2*2*2*3"
