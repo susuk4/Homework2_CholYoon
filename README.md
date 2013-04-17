@@ -14,13 +14,13 @@ README.md = instruction.
 
 Example)
 =
-x = Factorint(0)/br
+x = Factorint(0) -> 
 Value Error
 
-x = Factorint(2.4)
+x = Factorint(2.4) -> 
 Value Error
 
-x = Factorint(24)
+x = Factorint(24);
 divisibleBy2 = x.isDivisible(2)
 divisibleBy2 = True
 
