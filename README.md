@@ -1,4 +1,7 @@
 Homework2_CholYoon
 ==================
 
-Factoring the Integer and prints out factorized equation. Also return the expression as string.
+Factoring the integer and return string of equation by toString() def. 
+Also, it allows to check if given integer is divisible by some other integer.
+Containing method will be isDivisible(), toString(), isAlreadyPrime() which is to check if it is already prime number
+It throws ValueError if input is not integer
