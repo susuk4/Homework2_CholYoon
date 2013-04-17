@@ -9,6 +9,6 @@ Containing method will be isDivisible(), toString(), isAlreadyPrime() which is t
 It throws ValueError if input is not integer.
 
 Factorint.py = class coded with factoring integer.
-=
+
 README.md = instruction.
-=
+
