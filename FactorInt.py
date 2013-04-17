@@ -7,11 +7,11 @@ class FactorInt:
                 self.denominator = [7,5,3,2]
                 self.string = ""
                 self.negative = isNegative(self.n)
-                self.lastnumber = print(self.n)
+                self.lastnumber = str(self.n)
             elif self.n==0:
                 print "0 cannot be factored"
             else: #print if given vallue is already a prime number
-                print print(self.n)+" is already a prime number"
+                print str(self.n)+" is already a prime number"
         else: #raise ValueError if it is not an integer
             raise ValueError, "Arguement is not an integer"
     
@@ -31,8 +31,8 @@ class FactorInt:
         return True
     
     #check to see if input is negative, if it is negative -1 will be added at last result
-    def isNegative(self)
-        if self.n<0
+    def isNegative(self):
+        if self.n<0:
             self.n = -1*self.n
     #looping through 2,3,5,7 which are prime numbers between 1 - 10 except 1
     #and return resulted string
@@ -42,9 +42,9 @@ class FactorInt:
             #and add divisible string at the front.
             if isDivisible(de):
                 self.lastnumber = self.lastnumber / de
-                self.string = print(de)+"*"self.string(self.lastnumber)
-        if self.negative #if negative ad -1 at last
-            self.string = print(-1)+"*"+self.string
-        return print(self.n)+": "+self.string 
+                self.string = str(de)+"*"+self.string(self.lastnumber)
+        if self.negative: #if negative add negative value
+            self.string = str(-1)+"*"+self.string
+        return str(self.n)+": "+self.string 
             
     
