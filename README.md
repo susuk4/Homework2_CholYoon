@@ -13,7 +13,7 @@ Factorint.py = class coded with factoring integer.
 README.md = instruction.
 
 Example)
-x = Factorint(0)
+x = Factorint(0)=
 Value Error
 
 x = Factorint(2.4)
