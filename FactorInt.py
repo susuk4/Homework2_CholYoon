@@ -9,9 +9,9 @@ class FactorInt:
                 self.negative = isNegative(self.n)
                 self.lastnumber = str(self.n)
             elif self.n==0:
-                print "0 cannot be factored"
+                raise ValueError, "0 cannot be factored"
             else: #print if given vallue is already a prime number
-                print str(self.n)+" is already a prime number"
+                raise ValueError, str(self.n)+" is already a prime number"
         else: #raise ValueError if it is not an integer
             raise ValueError, "Arguement is not an integer"
     
