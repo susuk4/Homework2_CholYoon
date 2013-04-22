@@ -9,8 +9,6 @@ class FactorInt:
                 if isNegative(self.n) == True:
                     self.negative = True
                     self.n = -1 * self.n
-                    %timeit isNegative(self.n)   ## compare time difference
-                    %timeit isNegativeCython(self.n)
                 self.lastnumber = str(self.n)
             elif self.n==0:
                 raise ValueError, "0 cannot be factored"
@@ -37,11 +35,6 @@ class FactorInt:
     #check to see if input is negative
     def isNegative(self,g1):
         return gi<0
-    
-    #cythonization of it input is negative
-    def isNegtaiveCython(int g2):
-        cdef bool tof = g2<0
-        return tof
         
     #looping through 2,3,5,7 which are prime numbers between 1 - 10 except 1
     #and return resulted string
