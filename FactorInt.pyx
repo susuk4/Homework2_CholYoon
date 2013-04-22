@@ -6,7 +6,11 @@ class FactorInt:
             if not isAlreadyPrime():
                 self.denominator = [7,5,3,2]
                 self.string = ""
-                self.negative = isNegative(self.n)
+                if isNegative(self.n) == True:
+                    self.negative = True
+                    self.n = -1 * self.n
+                    %timeit isNegative(self.n)   ## compare time difference
+                    %timeit isNegativeCython(self.n)
                 self.lastnumber = str(self.n)
             elif self.n==0:
                 raise ValueError, "0 cannot be factored"
@@ -30,10 +34,15 @@ class FactorInt:
                 return False
         return True
     
-    #check to see if input is negative, if it is negative -1 will be added at last result
-    def isNegative(self):
-        if self.n<0:
-            self.n = -1*self.n
+    #check to see if input is negative
+    def isNegative(self,g1):
+        return gi<0
+    
+    #cythonization of it input is negative
+    def isNegtaiveCython(int g2):
+        cdef bool tof = g2<0
+        return tof
+        
     #looping through 2,3,5,7 which are prime numbers between 1 - 10 except 1
     #and return resulted string
     def toString(self):
